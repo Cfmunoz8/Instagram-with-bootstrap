@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Instagram</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://cdn.icon-icons.com/icons2/3261/PNG/512/instagram_logo_icon_206739.png" alt="" width="30" height="30">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png" alt="" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createpost">
+          Create a new post
+        </button>
+        <div class="modal" id="createpost" tabindex="-1" aria-labelledby="createpost" aria-hidden="true">
+          <div class="modal-dialog" role="form">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container container-fluid">
+    <nav class="d-flex justify-content-center align-middle py-2">
+      <div class="btn-group btn-secondary" id="nav-tab" role="tablist">
+        <button class="btn active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+          <i class="fa-solid fa-grip"></i>
+        </button>
+        <button class="btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+          <i class="fa-solid fa-square"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <div class="container-fluid">
+          <div class="row b-1">
+            <div class="col-12 col-md-4 p-1">
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y" alt="img.1">
+            </div>
+            <div class="col-12 col-md-4 p-1">
+              <img class="img-fluid" src="https://i.picsum.photos/id/103/2592/1936.jpg?hmac=aC1FT3vX9bCVMIT-KXjHLhP6vImAcsyGCH49vVkAjPQ" alt="img.2">
+            </div>
+            <div class="col-12 col-md-4 p-1">
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1035/5854/3903.jpg?hmac=DV0AS2MyjW6ddofvSIU9TVjj1kewfh7J3WEOvflY8TM" alt="img.3">
+            </div>
+          </div>
+          <div class="row b-1">
+            <div class="col-12 col-md-4 p-1">
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I" alt="img.4">
+            </div>
+            <div class="col-12 col-md-4 p-1">
+              <img  class="img-fluid" src="https://i.picsum.photos/id/129/4910/3252.jpg?hmac=g1KzJMIp75lG_scR48R1baC6TjhVmkEyygSyngKYRsg" alt="img.5">
+            </div>
+            <div class="col-12 col-md-4 p-1">
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1006/3000/2000.jpg?hmac=x83pQQ7LW1UTo8HxBcIWuRIVeN_uCg0cG6keXvNvM8g" alt="img.6">
+            </div>
+          </div>
+          <div class="row b-1">
+            <div class="col-12 col-md-4 p-1">
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1012/3973/2639.jpg?hmac=s2eybz51lnKy2ZHkE2wsgc6S81fVD1W2NKYOSh8bzDc" alt="img.7">
+            </div>
+            <div class="col-12 col-md-4 p-1">
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1036/4608/3072.jpg?hmac=Tn9CS_V7lFSMMgAI5k1M38Mdj-YEJR9dPJCyeXNpnZc" alt="img.8">
+            </div>
+            <div class="col-12 col-md-4 p-1">
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1060/5598/3732.jpg?hmac=31kU0jp5ejnPTdEt-8tAXU5sE-buU-y1W1qk_BsiUC8" alt="img.9">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <div class="container container-fluid">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 col-sm-10 col-12 bg-light m-2">
+              <nav>
+                <h5>My first photo </h5>
+              </nav>
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y" alt="img.1">
+              <h6>25 likes</h6>
+              <p>This is my first photo of the feed.</p>
+              <p class="text.secondary"><i class="fa-regular fa-heart"></i> Comment... <i class="fa-solid fa-ellipsis-vertical float-end"></i></p>
+
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 col-sm-10 col-12 bg-light m-2">
+              <nav>
+                <h5>#relajación</h5>
+              </nav>
+                <img class="img-fluid" src="https://i.picsum.photos/id/103/2592/1936.jpg?hmac=aC1FT3vX9bCVMIT-KXjHLhP6vImAcsyGCH49vVkAjPQ" alt="img.2">
+              <h6>21 likes</h6>
+              <p>Merecido descanso...</p>
+              <p class="text.secondary"><i class="fa-regular fa-heart"></i> Comment...<i class="fa-solid fa-ellipsis-vertical float-end"></i></p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 col-sm-10 col-12 bg-light m-2">
+              <nav>
+                <h5>Arcoiris </h5>
+              </nav>
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1035/5854/3903.jpg?hmac=DV0AS2MyjW6ddofvSIU9TVjj1kewfh7J3WEOvflY8TM" alt="img.3">
+              <h6>30 likes</h6>
+              <p>This is my third photo of the feed.</p>
+              <p class="text.secondary"><i class="fa-regular fa-heart"></i> Comment...<i class="fa-solid fa-ellipsis-vertical float-end"></i></p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 col-sm-10 col-12 bg-light m-2">
+              <nav>
+                <h5>My first photo </h5>
+              </nav>
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I" alt="img.4">
+              <h6>23 likes</h6>
+              <p>This is my first photo of the feed.</p>
+              <p class="text.secondary"><i class="fa-regular fa-heart"></i> Comment...<i class="fa-solid fa-ellipsis-vertical float-end"></i></p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 col-sm-10 col-12 bg-light m-2">
+              <nav>
+                <h5>My first photo </h5>
+              </nav>
+              <img  class="img-fluid" src="https://i.picsum.photos/id/129/4910/3252.jpg?hmac=g1KzJMIp75lG_scR48R1baC6TjhVmkEyygSyngKYRsg" alt="img.5">
+              <h6>23 likes</h6>
+              <p>This is my first photo of the feed.</p>
+              <p class="text.secondary"><i class="fa-regular fa-heart"></i> Comment...<i class="fa-solid fa-ellipsis-vertical float-end"></i></p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 col-sm-10 col-12 bg-light m-2">
+              <nav>
+                <h5>My first photo </h5>
+              </nav>
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1006/3000/2000.jpg?hmac=x83pQQ7LW1UTo8HxBcIWuRIVeN_uCg0cG6keXvNvM8g" alt="img.6">
+              <h6>23 likes</h6>
+              <p>This is my first photo of the feed.</p>
+              <p class="text.secondary"><i class="fa-regular fa-heart"></i> Comment...<i class="fa-solid fa-ellipsis-vertical float-end"></i></p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 col-sm-10 col-12 bg-light m-2">
+              <nav>
+                <h5>My first photo </h5>
+              </nav>
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1012/3973/2639.jpg?hmac=s2eybz51lnKy2ZHkE2wsgc6S81fVD1W2NKYOSh8bzDc" alt="img.7">
+              <h6>23 likes</h6>
+              <p>This is my first photo of the feed.</p>
+              <p class="text.secondary"><i class="fa-regular fa-heart"></i> Comment...<i class="fa-solid fa-ellipsis-vertical float-end"></i></p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 col-sm-10 col-12 bg-light m-2">
+              <nav>
+                <h5>My first photo </h5>
+              </nav>
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1036/4608/3072.jpg?hmac=Tn9CS_V7lFSMMgAI5k1M38Mdj-YEJR9dPJCyeXNpnZc" alt="img.8">
+              <h6>23 likes</h6>
+              <p>This is my first photo of the feed.</p>
+              <p class="text.secondary"><i class="fa-regular fa-heart"></i> Comment...<i class="fa-solid fa-ellipsis-vertical float-end"></i></p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 col-sm-10 col-12 bg-light m-2">
+              <nav>
+                <h5>My first photo </h5>
+              </nav>
+              <img  class="img-fluid" src="https://i.picsum.photos/id/1060/5598/3732.jpg?hmac=31kU0jp5ejnPTdEt-8tAXU5sE-buU-y1W1qk_BsiUC8" alt="img.9">
+              <h6>23 likes</h6>
+              <p>This is my first photo of the feed.</p>
+              <p class="text.secondary"><i class="fa-regular fa-heart"></i> Comment...<i class="fa-solid fa-ellipsis-vertical float-end"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://kit.fontawesome.com/55f2d541fe.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
